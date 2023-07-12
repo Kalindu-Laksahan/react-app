@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const colors = ["red", "green", "blue"];
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//map function
+const items = colors.map(function(color){ 
+    return '<li>' + color + '</li>';
+});
+console.log(items);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// arrow functions
+const newItems = colors.map(color => '<li>' + color + '</li>');
+console.log(newItems);
+
+
+
+
+
+
